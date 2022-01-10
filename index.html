@@ -4,37 +4,7 @@
 </head>
 <body>
   <p>Updates are posted in chronological order, with the most recent updates on the bottom.</p>
-  <h1>2021-08-21</h1>
-  <p>www.vegard.net is offline due to hardware failure. I'm not sure if and when it'll eventually be back online.</p>
-  <h2>Update @ 20:38 CET</h2>
-  <p>vbox4 is dead. It started to log CPU errors this morning, and locked up a couple of times before it went belly up for the last time. The CPU is integrated, I've tried to track down an identical replacement motherboard, but that turned out to be a dead end.</p>
-  <p>Instead of spending time and money on building a new vbox, I've purchased a second hand Raspberry Pi 4B 4GB that is more than powerful enough to host the site. A VPS might have been an option, too, but I enjoy hosting the hardware myself.</p>
-  <p>Expect a couple of weeks downtime. The Pi has to arrive, and I have to restore everything from backups. In the meantime, you can browse what once was with the help of the <a href="https://web.archive.org/web/20210804214723/https://www.vegard.net/">Internet Acrhive mirror</a> I've been maintaining.</p>
-  <h1>2021-08-22</h1>
-  <p>Some internal services are back up and running on a Pi that's usually dedicated for Pi-hole. It could probably have handled the load of the entire site, and since I got the internal stuff online again, getting the rest isn't <em>that</em> much work. I'm not sure if I want to spend time on setting up everything twice, however, both on this Pi and the one that'll arrive some time next week.</p>
-  <h1>2021-08-24</h1>
-  <p>The second hand Pi I purchased could, for some reason, not be delivered to my door by the courier service. Now it's bouncing around in their system. I've got a feeling this can take a while.</p>
-  <h1>2021-08-26</h1>
-  <p>It's taking a while.</p>
-  <h1>2021-08-27</h1>
-  <p>The Pi has arrived. It's a miracle.</p>
-  <h1>2021-08-28</h1>
-  <p>I've started the process of rebuilding the site on the 5th incarnation of VBOX. Me from 10 years ago - or perhaps even 6 months ago - would have devoted all his spare time to get everything online again as quickly as possible. Me as of right now? Not so much.</p>
-  <h2>Update @ 21:42 CET</h2>
-  <p>I watched two episodes of <a href="https://en.wikipedia.org/wiki/Better_Call_Saul">Better Call Saul</a> instead.</p>
-  <h1>2021-08-30</h1>
-  <p>I've salvaged a ton of files from one of the SSD disks that was in the RAID1 array on vbox4. I didn't actually need the files form the disk, because everything was backed up every night, and, yes, I check by backups - at least semi-reguraly. But it still saved me some time.</p>
-<p>The SSD drive has been repartitioned and reformatted, and now is connected to the Pi with a USB to SATA cable, and will be doing all the heavy storage lifting. It will serve the Git repos, databases, everything that Apache serves, home folders, etc.</p>
-<p>The next step now is to move the internal services I use regularly from the their temporary home at the Pi-hole Pi to their new vbox5-home.</p>
-  <p>But that's an adventure for another day, now I'm going for a walk instead.</p>
-  <h1>2021-08-31</h1>
-  <p>I got my second covid shot yesterday, so today I've been drifting in and out of sleep. In the evening, I felt better, and managed to move the internal services from the temporary Pi, get Jenkins installed, and a completed a few other minor steps towards profit.</p>
-  <p>This evening I've learned that there is a special place in hell reserved for whoever decided that Snap was the package manager of choice for Ubuntu. Also, AppAmrmor should be shot straight into the sun.</p>
-  <h1>2021-09-02</h1>
-  <p>Turns out using Hugo installed from the Snap repo with Jenkins is fucking impossible when your home directories isn't mounted on the usual /home path. Had to build Hugo from source for ARM instead because the Pi comes with an ARM CPU and there is no Hugo extended binary available, which I need for SCSS.</p>
-  <p>I've shared three bottles of wine with the kindergarten dads, not sure if I should do this now. The potential for catastrophy is quite high with sudo powers. But I'm too worked up to go to sleep.</p>
-  <h2>Update @ 23:23 CET</h2>
-  <p>Hey, look at that. The Hugo site got built and <a href="https://new.vegard.net/">published</a> successfully by Jenkins. Turns out three bottles of wine isn't such a bad idea after all. None of the links work, and the stylesheets are borked, but that's because Hugo is configured with www.vegard.net as its root domain, and that's currently hosted by Netlify to make sure you can read what you're reading now.</p>
-  <p>Anyway, this is a positive development. I might be able to get everything back to where it was prior to vbox4's hardware failure during the weekend.</p>
+  <h1>2022-01-10</h1>
+  <p>The site is offline again. Not sure when it's back up.</p>
 </body>
 </html>
